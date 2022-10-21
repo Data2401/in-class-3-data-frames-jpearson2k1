@@ -38,7 +38,7 @@ US_spend <- data.frame(USPersonalExpenditure)
 
 What are the current column names of your dataframe?
 ```{r}
-
+colnames(USPersonalExpenditure)
 ```
 
 
@@ -46,7 +46,7 @@ Consider: why are they so strange? (Think about whether you could use a number l
 
 What are the current row names of your dataframe?
 ```{r}
-
+row.names(USPersonalExpenditure)
 ```
 
 
@@ -59,7 +59,7 @@ Add a column "Category" to your data frame that contains the rownames
 Consider how this data isn't tidy. Use the `pivot_longer()` function from last class to make the data tidy. 
 
 ```{r}
-
+pivot_longer(USPersonalExpenditure)
 ```
 
 
